@@ -1,0 +1,36 @@
+.table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+   
+    tr {
+        th,
+        td {
+            border: 5px solid black;
+            &:nth-child(2) {
+                text-align: right;
+            }
+            &:first-child {
+                width: 40%;
+            }
+            &:last-child {
+                width: 30%;
+            }
+        }
+        th {
+            padding: 36px 8px;
+            background-color: #cccccc;
+        }
+        td {
+            padding: 24px 8px;
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+
+        &:nth-child(odd) {
+            background-color: #eeeeee;
+        }
+    }
+}

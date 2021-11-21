@@ -1,0 +1,16 @@
+.tabs {
+    display: inline-block;
+    box-shadow: 6px 6px 0px 1px #111111;
+    margin: 0;
+    padding: 0;
+    .tab {
+        list-style-type: none;
+        float: left;
+        padding: 12px 24px;
+        border: 5px solid black;
+        margin-left: -5px;
+        &.activeTab {
+            background-color: #95bcf1;
+        }
+    }
+}
