@@ -10,16 +10,16 @@ function Accordion({ name, applications }) {
     const toggle = () => setIsOpenState(!isOpenState);
 
     return (
-        <>
+        <section className={styles.accordion}>
             <button className={styles.item} onClick={toggle}>
                 {name} Applications
-                {isOpenState ? <AiOutlineMinusCircle className={styles.icon} /> : <AiOutlinePlusCircle className={styles.icon}/>}
+                {isOpenState ? <AiOutlineMinusCircle className={styles.icon} /> : <AiOutlinePlusCircle className={styles.icon} />}
             </button>
             {
                 isOpenState &&
                 <AccordionContent applications={applications} />
             }
-        </>
+        </section>
     )
 }
 

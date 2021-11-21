@@ -9,14 +9,12 @@ function AppContent({ matureApplications, betaApplications }) {
             <nav>
                 <Tabs />
             </nav>
-            <section className={styles.accordion}>
-                <Accordion
-                    name="Mature"
-                    applications={matureApplications} />
-                <Accordion
-                    name="Beta"
-                    applications={betaApplications} />
-            </section>
+            <Accordion
+                name="Mature"
+                applications={matureApplications} />
+            <Accordion
+                name="Beta"
+                applications={betaApplications} />
         </main>
     );
 }

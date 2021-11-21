@@ -1,23 +1,26 @@
 $black-color: rgb(0, 0, 0);
 
-.item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 5px solid $black-color;
-    margin-bottom: -5px;
-    padding: 12px 24px;
-    width: 100%;
-    font: inherit;
-    text-align: left;
-    &:not(:first-child) {
-        margin-top: -5px;
-    }
-    .icon {
-        color: $black-color;
-        font-size: 40px;
-        background-color: rgb(179, 179, 179);
-        border-radius: 50%;
-        box-shadow: inset 0px 0px 0px 4px $black-color;
+.accordion {
+    max-width: 660px;
+    .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 5px solid $black-color;
+        margin-bottom: -5px;
+        padding: 12px 24px;
+        width: 100%;
+        font: inherit;
+        text-align: left;
+        &:not(:first-child) {
+            margin-top: -5px;
+        }
+        .icon {
+            color: $black-color;
+            font-size: 40px;
+            background-color: rgb(179, 179, 179);
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 0px 4px $black-color;
+        }
     }
 }
